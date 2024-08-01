@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thành Tô</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Gửi Trang  Của Anh</h1>
+            <h1>Gửi Trang Của Anh</h1>
         </header>
         <main>
             <section class="message">
                 <p>Xin chào, Nguyễn Thu Trang,</p>
-                <p>Anh muốn nói rằng anh rất yêu em. Em là người đặc biệt nhất trong cuộc đời của anh và anh cảm thấy rất may mắn khi gặp được em. Từ cuộc tình trước xong, anh đã còn không tin vào tình yêu nữa nhưng từ khi gặp em thì anh đã có cảm giác lại.Đúng thật là anh không có gì hơn những chàng trai xung quanh em ngoài thật lòng cả. 
+                <p>Anh muốn nói rằng anh rất yêu em. Em là người đặc biệt nhất trong cuộc đời của anh và anh cảm thấy rất may mắn khi gặp được em. Từ cuộc tình trước xong, anh đã còn không tin vào tình yêu nữa nhưng từ khi gặp em thì anh đã có cảm giác lại. Đúng thật là anh không có gì hơn những chàng trai xung quanh em ngoài thật lòng cả. 
                     Anh đang cố gắng từng ngày hoàn thiện bản thân mình hơn để em tin tưởng anh hơn.
-                    Anh mong rằng anh được đồng hành,che chở, sẻ chia cùng em trên đoạn đường sắp tới. Hãy cho anh bước vào thế giới của em nhé!
+                    Anh mong rằng anh được đồng hành, che chở, sẻ chia cùng em trên đoạn đường sắp tới. Hãy cho anh bước vào thế giới của em nhé!
                 </p>
                 <p>Anh yêu em rất nhiều!</p>
             </section>
@@ -27,8 +28,15 @@
         <footer>
             <button onclick="revealMessage()">Nhấn để thấy thông điệp</button>
             <div id="hidden-message" style="display:none;">
-                <p>Làm người yêu anh nhé?.</p>
+                <p>Làm người yêu anh nhé?</p>
             </div>
+            <!-- Form để người dùng viết câu trả lời -->
+            <form id="response-form">
+                <label for="response">Câu trả lời của em:</label>
+                <textarea id="response" name="response" rows="4" cols="50" placeholder="Viết câu trả lời ở đây..."></textarea><br>
+                <button type="submit">Gửi</button>
+            </form>
+            <div id="response-output"></div>
         </footer>
     </div>
     <script src="script.js"></script>
